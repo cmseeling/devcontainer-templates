@@ -1,0 +1,17 @@
+{
+  "id": "node-custom",
+  "name": "Nodejs using mise",
+  "installsAfter": ["ghcr.io/devcontainers/features/common-utils"],
+  "options": {
+    "user": {
+      "type": "string",
+      "description": "The user to place custom dotfiles for",
+      "default": "vscode"
+    },
+    "version": {
+      "description": "Version to be installed as default.",
+      "type": "string",
+      "default": "lts"
+    }
+  }
+}
