@@ -1,0 +1,12 @@
+{
+  "id": "enable-rust",
+  "name": "Enable rust using alpine rustup",
+  "installsAfter": ["ghcr.io/devcontainers/features/common-utils"],
+  "options": {
+    "user": {
+      "type": "string",
+      "description": "The user to install rust for",
+      "default": "vscode"
+    }
+  }
+}
