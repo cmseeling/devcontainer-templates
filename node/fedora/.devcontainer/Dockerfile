@@ -3,7 +3,8 @@ FROM fedora:latest
 RUN dnf copr enable atim/starship -y && \
   dnf copr enable dejan/lazygit -y && \
   dnf copr enable varlad/zellij -y && \
-  dnf update --refresh && \
+  dnf copr enable jdxcode/mise -y && \
+  dnf update --refresh -y && \
   dnf install -y \
   git \
   helix \
@@ -13,11 +14,6 @@ RUN dnf copr enable atim/starship -y && \
   bat \
   lazygit \
   zellij \
-  && dnf clean all
-
-RUN dnf copr enable jdxcode/mise -y && \
-  dnf update --refresh -y && \
-  dnf install -y \
   mise \
   && dnf clean all
 

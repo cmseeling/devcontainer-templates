@@ -4,7 +4,6 @@ FROM node:${VARIANT}-alpine
 RUN sed -i 's/#community/community/' /etc/apk/repositories
 
 RUN apk update && apk upgrade && apk add --no-cache \
-  # git \
   helix \
   fish \
   starship \
@@ -12,5 +11,8 @@ RUN apk update && apk upgrade && apk add --no-cache \
   bat \
   lazygit \
   zellij
+
+RUN npm install -g pnpm
+RUN corepack enable pnpm
 
 COPY ./config /home/config/

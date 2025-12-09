@@ -1,6 +1,5 @@
 if status is-interactive
     # Commands to run in interactive sessions can go here
-    mise activate fish | source
 end
 
 # Fish command history
@@ -14,6 +13,8 @@ function starship_transient_prompt_func
 end
 starship init fish | source
 enable_transience
+
+mise activate fish | source
 
 set -gx EDITOR hx
 
