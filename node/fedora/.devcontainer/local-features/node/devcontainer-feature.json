@@ -5,7 +5,7 @@
   "options": {
     "user": {
       "type": "string",
-      "description": "The user to place custom dotfiles for",
+      "description": "The user to enable node and pnpm for",
       "default": "vscode"
     },
     "version": {
