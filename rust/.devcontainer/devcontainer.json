@@ -20,6 +20,15 @@
     "ghcr.io/devcontainers/features/rust:1",
     "./local-features/config"
   ],
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "rust-lang.rust-analyzer",
+        "naumovs.color-highlight",
+        "thang-nm.flow-icons"
+      ]
+    }
+  },
   // Use 'forwardPorts' to make a list of ports inside the container available locally.
   // "forwardPorts": [],
   // Use 'postCreateCommand' to run commands after the container is created.

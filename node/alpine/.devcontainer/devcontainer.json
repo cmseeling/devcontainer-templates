@@ -20,6 +20,15 @@
     "ghcr.io/devcontainers/features/common-utils:2",
     "./local-features/config"
   ],
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "svelte.svelte-vscode",
+        "naumovs.color-highlight",
+        "thang-nm.flow-icons"
+      ]
+    }
+  },
   // Use 'forwardPorts' to make a list of ports inside the container available locally.
   // "forwardPorts": [],
   // Use 'postCreateCommand' to run commands after the container is created.
