@@ -5,6 +5,7 @@ RUN dnf copr enable atim/starship -y && \
   dnf copr enable varlad/zellij -y && \
   dnf copr enable jdxcode/mise -y && \
   dnf copr enable frostyx/gleam -y && \
+  dnf copr enable lihaohong/yazi -y && \
   dnf update --refresh -y && \
   dnf install -y \
   git \
@@ -13,6 +14,9 @@ RUN dnf copr enable atim/starship -y && \
   starship \
   lsd \
   bat \
+  fzf \
+  zoxide \
+  yazi \
   lazygit \
   zellij \
   mise \
