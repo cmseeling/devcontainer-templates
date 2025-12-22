@@ -23,9 +23,7 @@
   "customizations": {
     "vscode": {
       "extensions": [
-        "Gleam.gleam",
-        "naumovs.color-highlight",
-        "thang-nm.flow-icons"
+        "Gleam.gleam"
       ]
     }
   },

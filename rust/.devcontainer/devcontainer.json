@@ -29,9 +29,7 @@
   "customizations": {
     "vscode": {
       "extensions": [
-        "rust-lang.rust-analyzer",
-        "naumovs.color-highlight",
-        "thang-nm.flow-icons"
+        "rust-lang.rust-analyzer"
       ]
     }
   },

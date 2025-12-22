@@ -23,9 +23,7 @@
   "customizations": {
     "vscode": {
       "extensions": [
-        "svelte.svelte-vscode",
-        "naumovs.color-highlight",
-        "thang-nm.flow-icons"
+        "svelte.svelte-vscode"
       ]
     }
   },
