@@ -16,6 +16,8 @@ cp -r /home/config/helix "${home_dir}/.config/helix"
 echo "set helix config"
 cp -r /home/config/lsd "${home_dir}/.config/lsd"
 echo "set lsd config"
+cp -r /home/config/yazi "${home_dir}/.config/yazi"
+echo "set yazi config"
 cp -r /home/config/zellij "${home_dir}/.config/zellij"
 echo "set zellij config"
 
