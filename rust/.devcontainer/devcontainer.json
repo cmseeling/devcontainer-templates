@@ -13,12 +13,18 @@
       "upgradePackages": "true"
     },
     "ghcr.io/devcontainers/features/rust:1": {},
-    "./local-features/config": { "user": "rust" }
+    "./local-features/config": {
+      "user": "rust"
+    },
+    "./local-features/fix-permissions": {
+      "user": "rust"
+    }
   },
   "overrideFeatureInstallOrder": [
     "ghcr.io/devcontainers/features/common-utils:2",
     "ghcr.io/devcontainers/features/rust:1",
-    "./local-features/config"
+    "./local-features/config",
+    "./local-features/fix-permissions"
   ],
   "customizations": {
     "vscode": {
