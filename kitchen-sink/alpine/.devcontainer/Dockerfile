@@ -9,6 +9,9 @@ RUN apk update && apk upgrade && apk add --no-cache \
   starship \
   lsd \
   bat \
+  fzf \
+  zoxide \
+  yazi \
   lazygit \
   zellij \
   gleam \

@@ -7,22 +7,26 @@
     "ghcr.io/devcontainers/features/common-utils:2": {
       "installZsh": "false",
       "installOhMyZsh": "false",
-      "username": "node",
+      "username": "vscode",
       "userUid": "1000",
       "userGid": "1000",
       "upgradePackages": "true"
     },
     "./local-features/config": {
-      "user": "node"
+      "user": "vscode"
     },
     "./local-features/enable-rust": {
-      "user": "node"
+      "user": "vscode"
+    },
+    "./local-features/fix-permissions": {
+      "user": "vscode"
     }
   },
   "overrideFeatureInstallOrder": [
     "ghcr.io/devcontainers/features/common-utils:2",
     "./local-features/config",
-    "./local-features/enable-rust"
+    "./local-features/enable-rust",
+    "./local-features/fix-permissions"
   ],
   "customizations": {
     "vscode": {
@@ -41,6 +45,9 @@
   // "postCreateCommand": "uname -a",
   // Replace when using a ptrace-based debugger like C++, Go, and Rust
   // "runArgs": [ "--init", "--cap-add=SYS_PTRACE", "--security-opt", "seccomp=unconfined" ],
+  "runArgs": [
+    "--network=host"
+  ],
   // Set `remoteUser` to `root` to connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
-  "remoteUser": "node"
+  "remoteUser": "vscode"
 }
