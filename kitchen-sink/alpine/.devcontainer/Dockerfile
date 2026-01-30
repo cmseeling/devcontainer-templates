@@ -7,10 +7,12 @@ RUN sed -i 's/#community/community/' /etc/apk/repositories
 
 RUN apk update && apk upgrade && apk add --no-cache \
   helix \
+  helix-tree-sitter-vendor \
   fish \
   starship \
   lsd \
   bat \
+  delta \
   fzf \
   zoxide \
   yazi \
